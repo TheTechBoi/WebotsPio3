@@ -1,0 +1,160 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+
+WorldInfo {
+  basicTimeStep 256
+}
+Viewpoint {
+  orientation -0.590457973411012 0.3746391646690671 0.714846051910077 2.2898993555977505
+  position 0.094780860879496 -2.227839546466731 7.392801890373765
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+  wallHeight 0.5
+}
+DEF P3 Pioneer3dx {
+  hidden position_0_0 1.3574613367759913
+  hidden position_0_1 22.76781255394968
+  hidden position_0_2 18.191918662660502
+  hidden linearVelocity_0 2.330510765329123e-06 -1.1743273078151245e-05 -2.4595575548644787e-07
+  hidden angularVelocity_0 8.932387378171103e-05 1.3792455975510712e-05 -4.807776604262301e-06
+  hidden rotation_1 0.9887286557570715 -0.10586703059880119 -0.10586697840689938 1.5821313658447125
+  hidden position_1_0 -22.753633303239326
+  hidden linearVelocity_1 1.9082995971669076e-06 -9.345813927898048e-06 1.1334453076499099e-05
+  hidden angularVelocity_1 8.87813437524704e-05 1.3764906278878021e-05 -5.043228302988316e-06
+  hidden rotation_2 1 0 0 2.37910792547902
+  hidden linearVelocity_2 1.8824492005224333e-06 -1.3596014401039062e-05 1.1193151900948796e-05
+  hidden angularVelocity_2 8.757149356795767e-05 3.880138023520932e-05 -5.325455872127433e-06
+  hidden rotation_4 0.6779317388494366 -0.6779317957324581 0.2842833758691213 3.695545096344285
+  hidden linearVelocity_4 -4.946380600351745e-07 -5.646522171085544e-06 -4.062728899320458e-06
+  hidden angularVelocity_4 8.865343866842142e-05 1.3760301725031286e-05 -4.804886017116135e-06
+  hidden rotation_9 -0.6679632622329796 0.6679632823245408 0.32810079819058885 3.775660567268625
+  hidden linearVelocity_9 2.698156517876377e-06 -1.2788574805385928e-06 -7.091740457539043e-06
+  hidden angularVelocity_9 8.81256681468203e-05 1.3199058715467321e-05 -4.805542652844869e-06
+  translation 1.8546384354591472 -1.7406256390861041 0.07618871864005879
+  rotation -0.006830255285487053 -0.003786770301442238 -0.9999695035266922 1.3138362103144858
+  controller "mahmut_klavye_kontrol"
+  extensionSlot [
+    Transform {
+      translation -0.05 0 0.29
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            roughness 1
+            metalness 0
+          }
+          geometry Sphere {
+            radius 0.15
+            subdivision 2
+          }
+        }
+      ]
+    }
+  ]
+}
+Pioneer3dx {
+  hidden position_0_0 -8.328163151821613
+  hidden position_0_1 20.625362474994972
+  hidden position_0_2 17.131979680189325
+  hidden linearVelocity_0 0.0009802016863236795 -0.00039478869104227963 7.334145977592372e-06
+  hidden angularVelocity_0 -0.0019166926844441158 -0.0007910112654009783 -0.0007806555379162018
+  hidden rotation_1 0.16842129361096714 0.6970058093513486 0.6970058605125782 2.80788192489797
+  hidden position_1_0 -30.73951285178919
+  hidden linearVelocity_1 0.0010986734113662406 -0.0002739124238069207 -0.0002293484280518507
+  hidden angularVelocity_1 -0.0018882151570117894 -0.000822378197026357 -0.00743063849089408
+  hidden rotation_2 -1 0 0 5.606771623070844
+  hidden linearVelocity_2 0.0010908328641292546 -4.484851139129631e-05 -0.0002308746854655958
+  hidden angularVelocity_2 -0.00449242079206637 0.028791284648225723 -0.007584615220541928
+  hidden rotation_4 0.10179416566285873 -0.10179423018156061 0.9895836915282841 4.701918286850141
+  hidden linearVelocity_4 0.0010350827200719887 -0.0006825689641169937 -4.4722064577075766e-05
+  hidden angularVelocity_4 0.007160677659318035 0.010379306345893118 -0.0008236912713233333
+  hidden rotation_9 -0.7061531276998794 0.7061531725145614 -0.05191779258884188 3.0378502897547683
+  hidden linearVelocity_9 0.0009777964948545815 -0.000604086083382833 0.00027486643798965016
+  hidden angularVelocity_9 0.007151178940290425 0.010363858871296565 -0.0008226340103784412
+  translation 1.4713036082963922 -1.3873463309253105 0.0759404977552883
+  rotation -0.006416458824689339 -0.005007856983147592 -0.9999668746636498 0.6829278568882173
+  name "Pioneer 3-DX Dikiz"
+  controller "mahmut_takip"
+  extensionSlot [
+    Transform {
+      translation -0.05 0 0
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "CAM_motor"
+            }
+          ]
+          endPoint Camera {
+            translation 0.025 0 0.34
+            children [
+              Transform {
+                translation -0.025 0 0
+                rotation 0 1 0 1.5708
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 1 0 1
+                      roughness 1
+                      metalness 0
+                    }
+                    geometry Cylinder {
+                      height 0.05
+                      radius 0.03
+                    }
+                  }
+                ]
+              }
+            ]
+            name "CAM"
+            width 480
+            height 480
+          }
+        }
+      ]
+    }
+    Transform {
+      translation -0.05 0 0.24
+      children [
+        Shape {
+          appearance PBRAppearance {
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.03 0.03 0.2
+          }
+        }
+      ]
+    }
+  ]
+}
+Solid {
+  translation 0 0 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry DEF Obstacle Cylinder {
+        height 0.5
+        radius 1.5
+      }
+    }
+  ]
+  boundingObject USE Obstacle
+}
